@@ -27,10 +27,12 @@ jobs:
         fi
 
     - name: Build
-      run: go build .
+      run: |
+        go build .
+        ls -alh
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@master
-      with:
-        name: exe
-        path: ./
+    # - name: Upload artifacts
+    #   uses: actions/upload-artifact@master
+    #   with:
+    #     name: exe
+    #     path: ./
