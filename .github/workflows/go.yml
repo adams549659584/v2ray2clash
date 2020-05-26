@@ -28,7 +28,7 @@ jobs:
 
     - name: Build
       run: |
-        go build .
+        go build
         ls -alh
 
     # - name: Upload artifacts
