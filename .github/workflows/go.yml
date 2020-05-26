@@ -27,7 +27,7 @@ jobs:
         fi
 
     - name: Build
-      run: make releases
+      run: make windows-amd64
 
     - name: Upload artifacts
       uses: actions/upload-artifact@master
